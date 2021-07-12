@@ -7,26 +7,69 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="banner">
-  <div class="container">
-  <div class="logo">
-    <a href="/">
-    <img class="logo" src="svg/noemi-logo.svg" alt="site logo">
-    </a>
+  <div class="popup-container hidden">
+    <div class="popup">
+      <button class="close-button" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <form class="form">
+        <h2 class="popup-title">ваш фидбек</h2>
+        <div class="select-form">
+          <h3 class="select-title">Как часто вы заходите на сайт?</h3>
+          <label class="select-group">
+            <select class="select">
+              <option value="everyday" selected>Почти каждый день</option>
+              <option value="everyweek">Раз в неделю</option>
+              <option value="everymonth">Раз в месяц</option>
+           </select>
+          </label>
+        </div>
+        <div class="radio-form">
+          <h3 class="radio-title">Вы подписаны на нашу e-mail рассылку?</h3>
+          <label class="radio-group">
+            <input type="radio" class="radio" name="radio-group">
+            <span class="radio-group-text">Да</span>
+          </label>
+          <label class="radio-group">
+            <input type="radio" class="radio" name="radio-group">
+            <span class="radio-group-text">Нет</span>
+          </label>
+          </div>
+        <div class="question-form">
+          <h3 class="question-form-title">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</h3>
+          <input type="text" class="question-form-field" placeholder="Может, больше рецептов?">
+        </div>
+        <div class="form-button">
+          <button type="submit" class="question-form-button">Отправить</button>
+        </div>
+      </form>
+    </div>
   </div>
-  <div>
-    <ul class="menu">
-      <li><a href="#0" class="menu-list">главная</a></li>
-      <li><a href="#0" class="menu-list">посты</a></li>
-      <li><a href="#0" class="menu-list">статьи</a></li>
-      <li><a href="#0" class="menu-list">теги</a></li>
-      <li><a href="#0" class="menu-list">темы</a></li>
-      <li><a href="#0" class="menu-list">контакты</a></li>
-    </ul>
-   </div>
-   </div>
-   <h1 class="title">блог о творчестве, спорте, и образе жизни</h1>
-  </header>
+	  <header class="banner">
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img class="logo" src="svg/noemi-logo.svg" alt="site logo">
+          </a>
+        </div>
+      <div class="menu-container">
+        <ul class="menu">
+          <li><a href="#0" class="menu-list">главная</a></li>
+          <li><a href="#0" class="menu-list">посты</a></li>
+          <li><a href="#0" class="menu-list">статьи</a></li>
+          <li><a href="#0" class="menu-list">теги</a></li>
+          <li><a href="#0" class="menu-list">темы</a></li>
+          <li><a href="#0" class="menu-list">контакты</a></li>
+        </ul>
+        <div class="burger-menu">
+          <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
+            <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+      <h1 class="title">блог о творчестве, спорте, и образе жизни</h1>
+    </header>
 <aside class="trends">
   <h2 class="trends-subtitle">сейчас в тренде</h2>
   <div class="trends-items">
@@ -218,7 +261,7 @@
 			    <input class="field" placeholder="Ваш email-адрес" required>
 		    </label>
 		    <button type="submit" class="submit"><span class="visually-hidden">Нажмите, чтобы подписаться на рассылку</span>Подписаться</button>
-	</form>
+	      </form>
     </section>
     <section class="sidebar-item">
       <h2 class="sidebar-subtitle">Теги</h2>
@@ -250,9 +293,9 @@
   <div class="shop-items">
     <div class="shop-item shop-item1">
       <picture class="shop-item-picture">
-        <source media="(min-width: 768px)" srcset="images/shop-item-desk1.jpg">
-        <source media="(min-width: 466px)" srcset="images/shop-item-tablet1.jpg">  
-        <source media="(max-width: 465px)" srcset="images/shop-item-mobile1.jpg">
+        <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+        <source media="(min-width: 641px)" srcset="images/shop-item-tablet1.jpg">  
+        <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
         <img src="images/shop-item-desk1.jpg" alt="модные подушки">
       </picture>
       <div class="shop-container">
@@ -269,9 +312,9 @@
     </div>
     <div class="shop-item shop-item2">
       <picture class="shop-item-picture">
-        <source media="(min-width: 768px)" srcset="images/shop-item-desk2.jpg">
-        <source media="(min-width: 466px)" srcset="images/shop-item-tablet2.jpg">  
-        <source media="(max-width: 465px)" srcset="images/shop-item-mobile2.jpg">
+        <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+        <source media="(min-width: 641px)" srcset="images/shop-item-tablet2.jpg">  
+        <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
         <img src="images/shop-item-desk2.jpg" alt="интерьерная кукла зайчик">
       </picture>
       <div class="shop-container">
@@ -287,9 +330,9 @@
     </div>
     <div class="shop-item shop-item3">
       <picture class="shop-item-picture">
-        <source media="(min-width: 768px)" srcset="images/shop-item-desk3.jpg">
-        <source media="(min-width: 466px)" srcset="images/shop-item-tablet3.jpg">  
-        <source media="(max-width: 465px)" srcset="images/shop-item-mobile3.jpg">
+        <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+        <source media="(min-width: 641px)" srcset="images/shop-item-tablet3.jpg">  
+        <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
         <img src="images/shop-item-desk3.jpg" alt="интерьерная рамка">
       </picture>
       <div class="shop-container">
